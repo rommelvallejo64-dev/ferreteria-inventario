@@ -30,7 +30,7 @@ Estas mejoras fueron preparadas con asistencia de Codex sobre el proyecto encont
 
 Los diez archivos PHP pasan la revisión de sintaxis. `php tests/reglas.php` ejecuta 26 comprobaciones de precios, cantidades, carrito acumulado, escape de texto y tokens CSRF sin conectarse a MySQL. El token fijo de ese archivo solo se usa en pruebas por consola; la aplicación usa `random_bytes`.
 
-Se incluye un flujo de GitHub Actions para repetir sintaxis y pruebas. No se ha ejecutado todavía en GitHub. Las comprobaciones unitarias no prueban el comportamiento transaccional de MySQL ni la interfaz completa.
+Se incluye un flujo de GitHub Actions para repetir sintaxis y pruebas. La revisión de sintaxis y las 26 comprobaciones pasaron también en GitHub Actions. Las comprobaciones unitarias no prueban el comportamiento transaccional de MySQL ni la interfaz completa.
 
 ## Pendientes antes de presentar una demo pública
 
