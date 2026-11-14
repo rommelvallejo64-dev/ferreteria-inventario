@@ -1,0 +1,11 @@
+name: Comprobaciones PHP
+on: [push, pull_request]
+jobs:
+  php:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Revisar sintaxis
+        run: find . -name '*.php' -not -path './php/config.local.php' -print0 | xargs -0 -n1 php -l
+      - name: Reglas de negocio y validación
+        run: php tests/reglas.php
