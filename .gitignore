@@ -1,0 +1,6 @@
+/php/config.local.php
+.env
+.env.*
+*.log
+backups/
+uploads/
